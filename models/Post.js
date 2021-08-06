@@ -24,7 +24,7 @@ Post.init(
         allowNull: false
       },
       // define a title column
-      title: {
+      description: {
         type: DataTypes.STRING,
         allowNull: false
       },
