@@ -38,23 +38,31 @@ nav .logo{
     padding: 10px 20px;
 }
 
-.signup{
+.signup,
+.login{
     padding: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.signup h3{
+.signup h3,
+.login h3{
     background-color: #553d67;
     color: white;
     padding: 10px;
 }
 
-.signup a{
+.signup a,
+.login a{
     text-decoration: none;
 }
-.signup .signup-form{
+.signup .signup-form,
+.login .login-form{
     display: flex;
     flex-direction: column;
+}
+
+.hide{
+    display: none;
 }

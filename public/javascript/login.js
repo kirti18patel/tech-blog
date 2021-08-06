@@ -1,3 +1,13 @@
+function signupHide(){
+  document.querySelector('.signup').classList.add("hide");
+  document.querySelector('.login').classList.remove("hide");
+}
+
+function loginHide(){
+  document.querySelector('.signup').classList.remove("hide");
+  document.querySelector('.login').classList.add("hide");
+}
+
 async function loginFormHandler(event) {
     event.preventDefault();
   
@@ -50,7 +60,8 @@ async function loginFormHandler(event) {
     }
   }
   
-  // document.querySelector('#signupButton').addEventListener('click', loginFormHandler);
-  
+  document.querySelector('#loginButton').addEventListener('click', loginFormHandler);  
   document.querySelector('#signupButton').addEventListener('click', signupFormHandler);
+  document.querySelector('#signupHide').addEventListener('click', signupHide);
+  document.querySelector('#loginHide').addEventListener('click', loginHide);
   
