@@ -1,1 +1,24 @@
 <h3>in dashboard</h3>
+{{#if posts}}
+{{> allPost posts}}
+{{/if}}
+
+<div class="addPost hide">
+    <div>
+        <h3>Create New Post</h3>
+        <form class="addpost-form">
+    
+            <label for="addPost-title">Title:</label>
+            <input type="text" id="addPost-title" />
+    
+            <label for="addPost-content">Content:</label>
+            <input type="text" id="addPost-content" />
+    
+            <button type="submit" id="create">Create</button>
+        </form>
+    </div>
+</div>
+
+<button id="addpostShow"> + Add Post </button>
+    
+<script src="./javascript/add-post.js"></script>
