@@ -1,0 +1,11 @@
+{{#each this}}
+    <div>
+        <div>
+            <p>{{title}}</p>
+            <p>Posted by {{user.name}} on {{format_date created_at}}</p>
+        </div>
+        <div>
+            <p>{{description}}</p>
+        </div>
+    </div>
+{{/each}}
