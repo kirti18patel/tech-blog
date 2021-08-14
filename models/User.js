@@ -23,21 +23,11 @@ User.init(
         // turn on auto increment
         autoIncrement: true
       },
-      // define a name column
-      name: {
-        type: DataTypes.STRING,
-        allowNull: false
-      },
-      // define an email column
-      email: {
+      // define a username column
+      username: {
         type: DataTypes.STRING,
         allowNull: false,
-        // there cannot be any duplicate email values in this table
         unique: true,
-        // if allowNull is set to false, we can run our data through validators before creating the table data
-        validate: {
-          isEmail: true
-        }
       },
       // define a password column
       password: {
@@ -63,7 +53,7 @@ User.init(
       }
     },
     sequelize,
-    timestamps: false,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
     modelName: 'user'
