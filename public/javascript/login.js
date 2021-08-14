@@ -53,7 +53,7 @@ async function loginFormHandler(event) {
   
       if (response.ok) {
         alert("user added");
-        // document.location.replace('/');
+        document.location.replace('/');
       } else {
         alert(response.statusText);
       }
