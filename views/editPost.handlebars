@@ -1,16 +1,14 @@
-<div>
-<h3>Edit Post</h3>
-<div id="{{post.id}}">
+<div class="editBox">
+    <h3>Edit Post</h3>
+    <div id="{{post.id}}">
+        <label for="updatedTitle">Title:</label>
+        <input type="text" value="{{post.title}}" id="updatedTitle"></input>
 
-<label for="updatedTitle">Title:</label>
-<input type="text" value="{{post.title}}" id="updatedTitle"></input>
+        <label for="updatedDescription">Content:</label>
+        <input type="text" value="{{post.description}}" id="updatedDescription"></input>
 
-<label for="updatedDescription">Content:</label>
-<input type="text" value="{{post.description}}" id="updatedDescription"></input>
-
-<button id="editPost"> Update </button>
-<button id="deletePost"> Delete </button>
-
-</div>
+        <button id="editPost"> Update </button>
+        <button id="deletePost"> Delete </button>
+    </div>
 </div>
 <script src="/javascript/edit-post.js"></script>

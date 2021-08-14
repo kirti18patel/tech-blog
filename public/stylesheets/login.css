@@ -1,0 +1,28 @@
+.signup,
+.login{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup h3,
+.login h3{
+    background-color: var(--darkcolor);
+    color:  var(--lightcolor);
+    padding: 10px;
+}
+
+.signup a,
+.login a{
+    text-decoration: none;
+}
+.signup .signup-form,
+.login .login-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.hide{
+    display: none;
+}

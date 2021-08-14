@@ -3,13 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --darkcolor : #553d67;
+    --secondarycolor: #99738e;
+    --lightcolor : white;
+}
+
 body{
-    background-color: #fff;
+    background-color:  var(--lightcolor);
+    font-family: 'Mukta', sans-serif;
 }
 
 nav{
-    background-color: #553d67;
-    /* background-color: #99738e; */
+    background-color: var(--darkcolor);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -25,44 +31,29 @@ nav .menu{
 nav .menu a{
     font-size: large;
     text-decoration: none;
-    color: white;
+    color: var(--lightcolor);
     margin: 10px;
 }
 
 nav .logo{
     width: 250px;
-    color: #553d67;
-    background-color: white;
+    color: var(--darkcolor);
+    background-color:  var(--lightcolor);
     border-radius: 10px;
     text-align: center;
+    font-size: larger;
     padding: 10px 20px;
 }
 
-.signup,
-.login{
-    padding: 20px;
+.center{
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
-.signup h3,
-.login h3{
-    background-color: #553d67;
-    color: white;
-    padding: 10px;
-}
-
-.signup a,
-.login a{
-    text-decoration: none;
-}
-.signup .signup-form,
-.login .login-form{
-    display: flex;
-    flex-direction: column;
-}
-
-.hide{
-    display: none;
+footer{
+    text-align: center;
+    color: var(--darkcolor);
+    margin: 30px;
 }

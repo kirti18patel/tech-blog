@@ -1,0 +1,29 @@
+#addpostShow{
+    text-align: center;
+    color: var(--lightcolor);
+    background: var(--darkcolor);
+    border-radius: 5px;
+    padding: 10px 20px 10px 10px;
+    font-size: medium;
+}
+
+.dashboardPost{    
+    text-align: center;
+    width: 70%;
+    color: var(--lightcolor);
+    background: var(--darkcolor);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: large;
+    margin: 30px auto;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.dashboardPost:hover{
+    background: var(--lightcolor);
+    color: var(--darkcolor);
+}

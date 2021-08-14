@@ -1,0 +1,12 @@
+.editBox{
+    color: var(--lightcolor);
+    background: var(--darkcolor);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    min-height: 300px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 10px;
+    border: 4px solid black;
+}
