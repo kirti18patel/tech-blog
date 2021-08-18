@@ -24,6 +24,11 @@
 
 .editBox .editPostBox input{
     font-size: medium;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    margin: 10px 0;
 }
 
 .editBox .editPostBox button{
