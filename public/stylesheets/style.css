@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 :root{
-    --darkcolor : #553d67;
-    --secondarycolor: #99738e;
-    --lightcolor : white;
+    --darkcolor : #437FC7;
+    --secondarycolor: #6DAFFE;
+    --lightcolor : #EDF6FF;
 }
 
 body{
