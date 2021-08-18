@@ -6,6 +6,7 @@
     padding: 10px 20px 10px 10px;
     font-size: medium;
     border: none;
+    margin: 20px 0px 0px 0px;
 }
 
 .dashboardPost{    
@@ -27,4 +28,47 @@
 .dashboardPost:hover{
     background: var(--lightcolor);
     color: var(--darkcolor);
+}
+
+.addPost{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    min-height: 200px;
+    margin: 50px auto 10px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.addPost .addpost-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.addpost-form button{    
+    text-align: center;
+    color: var(--lightcolor);
+    background: var(--darkcolor);
+    border-radius: 5px;
+    padding: 10px 20px 10px 10px;
+    font-size: medium;
+    border: none;
+    margin: 20px 0px 0px 0px;
+}
+
+.entry{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px;
+}
+
+.entry input{
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    margin: 5px;
+    width: 80%;
 }
