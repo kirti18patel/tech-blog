@@ -1,26 +1,54 @@
 .signup,
 .login{
-    padding: 20px;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    width: 60%;
+    min-height: 200px;
+    margin: 50px auto 10px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .signup h3,
 .login h3{
-    background-color: var(--darkcolor);
-    color:  var(--lightcolor);
-    padding: 10px;
+    color:  var(--darkcolor);
+    font-size: 1.5em;
+    padding: 10px 0px;
 }
 
-.signup a,
-.login a{
-    text-decoration: none;
-}
 .signup .signup-form,
 .login .login-form{
     display: flex;
     flex-direction: column;
+}
+
+.signup-form button,
+.login-form button{    
+    text-align: center;
+    color: var(--lightcolor);
+    background: var(--darkcolor);
+    border-radius: 5px;
+    padding: 10px 20px 10px 10px;
+    font-size: medium;
+    border: none;
+    margin: 20px 0px 0px 0px;
+}
+
+#signupHide,
+#loginHide{
+    color: var(--darkcolor);
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.login-form input,
+.signup-form input{
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
 }
 
 .hide{
