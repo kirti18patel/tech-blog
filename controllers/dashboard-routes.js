@@ -27,4 +27,20 @@ router.get('/', withAuth, (req, res) => {
     });
 });
 
+router.get('/post/:id', (req, res) => {
+  Post.findByPk(req.params.id, {
+    include: [ User ]
+  })
+    .then(dbPostData => {
+      
+      if (dbPostData) {
+        const post= dbPostData.get({ plain: true });
+      res.render('editPost', {post});}
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
 module.exports = router;

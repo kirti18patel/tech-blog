@@ -1,0 +1,20 @@
+<div class="card">
+    <div class="card-title">
+        <p>{{post.title}}</p>
+        <p>Posted by {{post.user.username}} on {{format_date post.created_at}}</p>
+    </div>
+    <div class="card-description">
+        <p>{{post.description}}</p>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-title">
+        <p>Comment:</p>
+    </div>
+    <div class="card-description">
+        <input type="text" id="comment"></input>
+        <button type="submit" id="addComment"> Submit </button>
+    </div>
+</div>
+<script src="/javascript/edit-post.js"></script>

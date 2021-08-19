@@ -24,13 +24,14 @@ router.get('/', (req, res) => {
 
 router.get('/post/:id', (req, res) => {
   Post.findByPk(req.params.id, {
+    attributes: ['id', 'title', 'description', "created_at"],
     include: [ User ]
   })
     .then(dbPostData => {
       
       if (dbPostData) {
         const post= dbPostData.get({ plain: true });
-      res.render('editPost', {post});}
+      res.render('comment', {post});}
     })
     .catch(err => {
       console.log(err);
