@@ -30,8 +30,9 @@ router.get('/post/:id', (req, res) => {
     .then(dbPostData => {
       
       if (dbPostData) {
+
         const post= dbPostData.get({ plain: true });
-      res.render('comment', {post});}
+      res.render('comment', {post, comment: "comments list"});}
     })
     .catch(err => {
       console.log(err);

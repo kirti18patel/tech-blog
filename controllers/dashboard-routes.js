@@ -27,7 +27,7 @@ router.get('/', withAuth, (req, res) => {
     });
 });
 
-router.get('/post/:id', (req, res) => {
+router.get('/edit/:id', (req, res) => {
   Post.findByPk(req.params.id, {
     include: [ User ]
   })
