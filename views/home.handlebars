@@ -1,0 +1,15 @@
+{{#if posts}}
+{{#each posts}}
+    <a href="/post/{{id}}" class="homePost">
+        <div class="card">
+            <div class="card-title">
+                <p>{{title}}</p>
+                <p>Posted by {{user.username}} on {{format_date created_at}}</p>
+            </div>
+            <div class="card-description">
+                <p>{{description}}</p>
+            </div>
+        </div>
+    </a>
+{{/each}}
+{{/if}}

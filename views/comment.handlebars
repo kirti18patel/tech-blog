@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="card-title">
+        <p>{{post.title}}</p>
+        <p>Posted by {{post.user.username}} on {{format_date post.created_at}}</p>
+    </div>
+    <div class="card-description">
+        <p>{{post.description}}</p>
+    </div>
+</div>
+
+{{> comment post.comments}}
+
+{{#if loggedIn}}
+<div class="comment-card">
+    <div class="comment-card-title">
+        <p>Comment:</p>
+    </div>
+    <div class="card-description extra">
+        <input type="text" id="comment"></input>
+        <button type="submit" id="addComment"> Submit </button>
+    </div>
+</div>
+{{/if}}
+
+<script src="/javascript/comment.js"></script>

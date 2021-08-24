@@ -1,0 +1,21 @@
+<div class="addPost hide">
+    <h3>Create New Post</h3>
+    <form class="addpost-form">
+        <div class="entry">
+            <label for="addPost-title">Title :</label>
+            <input type="text" id="addPost-title" />
+        </div>
+        <div class="entry">
+            <label for="addPost-content">Content :</label>
+            <input type="text" id="addPost-content" />
+        </div>
+        <button type="submit" id="create">Create</button>
+    </form>
+</div>
+<div class="center"><button id="addpostShow"> + New Post </button></div>
+
+{{#if posts}}
+{{> dashboardPost posts}}
+{{/if}}
+
+<script src="./javascript/add-post.js"></script>

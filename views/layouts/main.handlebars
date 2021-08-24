@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/dashboard.css">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <link rel="stylesheet" href="/stylesheets/editpage.css">
+    <link rel="stylesheet" href="/stylesheets/home.css">
+    <link rel="stylesheet" href="/stylesheets/comment.css">
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            {{#if loggedIn}}
+            <a href="#" id="logout">Logout</a>
+            {{else}}            
+            <a href="/login">Login</a>
+            {{/if}}
+        </div>
+        <div class="logo">
+            <h2>The Tech Blog</h2>
+        </div>
+    </nav>
+    <main>
+      {{{ body }}}
+    </main> 
+    <footer>@ The Tech Blog Folks</footer>
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script> 
+{{/if}}
+</body>
+</html>
