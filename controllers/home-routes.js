@@ -41,7 +41,7 @@ router.get('/post/:id', (req, res) => {
       if (dbPostData) {
         const post= dbPostData.get({ plain: true });
         console.log(post);
-        res.render('comment', {post});
+        res.render('comment', {post,  loggedIn: req.session.loggedIn});
       }
     })
     .catch(err => {

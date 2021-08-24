@@ -10,6 +10,7 @@
 
 {{> comment post.comments}}
 
+{{#if loggedIn}}
 <div class="comment-card">
     <div class="comment-card-title">
         <p>Comment:</p>
@@ -19,4 +20,6 @@
         <button type="submit" id="addComment"> Submit </button>
     </div>
 </div>
+{{/if}}
+
 <script src="/javascript/comment.js"></script>
