@@ -34,12 +34,10 @@ router.get('/post/:id', (req, res) => {
   ]
   })
     .then(dbPostData => {
-      // console.log(dbPostData);
       if (dbPostData) {
-
         const post= dbPostData.get({ plain: true });
-        console.log(post);
-      res.render('comment', {post, comment: "comments list"});}
+        res.render('comment', {post, comment: "comments list"});
+      }
     })
     .catch(err => {
       console.log(err);
