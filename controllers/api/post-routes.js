@@ -38,13 +38,6 @@ router.get('/:id', (req, res) => {
         attributes: ['id','username']
       }
   ],
-  // include: [
-  //   User,
-  //   {
-  //     model: Comment,
-  //     include: [User],
-  //   },
-  // ],
     where: {
       id: req.params.id
     }
