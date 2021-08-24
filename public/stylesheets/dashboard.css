@@ -1,7 +1,7 @@
 #addpostShow{
     text-align: center;
     color: var(--lightcolor);
-    background: var(--darkcolor);
+    background: var(--blue);
     border-radius: 5px;
     padding: 10px 20px 10px 10px;
     font-size: medium;
@@ -13,10 +13,10 @@
     text-align: center;
     width: 70%;
     color: var(--lightcolor);
-    background: var(--darkcolor);
+    background: var(--blue);
     border-radius: 5px;
     padding: 20px;
-    font-size: large;
+    font-size: 1.3rem;
     margin: 30px auto;
     text-decoration: none;
     display: flex;
@@ -26,8 +26,9 @@
 }
 
 .dashboardPost:hover{
-    background: var(--lightcolor);
-    color: var(--darkcolor);
+    background: var(--green);
+    color: var(--blue);
+    font-weight: bold;
 }
 
 .addPost{
@@ -39,6 +40,7 @@
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--green);
 }
 
 .addPost .addpost-form{
@@ -48,11 +50,11 @@
 
 .addpost-form button{    
     text-align: center;
-    color: var(--lightcolor);
-    background: var(--darkcolor);
+    color: var(--pink);
+    background: var(--blue);
     border-radius: 5px;
     padding: 10px 20px 10px 10px;
-    font-size: medium;
+    font-size: 1.2rem;
     border: none;
     margin: 20px 0px 0px 0px;
 }

@@ -1,5 +1,6 @@
 .editBox{
-    color: var(--lightcolor);
+    color: var(--blue);
+    background-color: var(--green);
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -18,12 +19,12 @@
 
 .editBox .editPostBox label{
     margin: 5px;
-    color: var(--secondarycolor);
-    font-size: medium;
+    color: var(--blue);
+    font-size: 1.1rem;
 }
 
 .editBox .editPostBox input{
-    font-size: medium;
+    font-size: 1.1rem;
     padding: 8px;
     border-radius: 5px;
     outline: none;
@@ -38,10 +39,10 @@
 #editPost,
 #deletePost{
     text-align: center;
-    color: var(--lightcolor);
-    background: var(--darkcolor);
+    color: var(--pink);
+    background: var(--blue);
     border-radius: 5px;
     padding: 10px 20px 10px 10px;
-    font-size: medium;
+    font-size: 1.1rem;
     border: none;
 }

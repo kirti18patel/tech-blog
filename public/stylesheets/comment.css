@@ -11,15 +11,15 @@
 .comment-card .comment-card-title{
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
-    background-color: var(--darkcolor);
-    color: var(--lightcolor);
+    background-color: var(--blue);
+    color: var(--green);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .card-description input{
-    font-size: medium;
+    font-size: 1.1rem;
     padding: 8px;
     border-radius: 5px;
     outline: none;
@@ -28,11 +28,11 @@
 }
 .card-description button{    
     text-align: center;
-    color: var(--lightcolor);
-    background: var(--darkcolor);
+    color: var(--green);
+    background: var(--blue);
     border-radius: 5px;
     padding: 10px 20px 10px 10px;
-    font-size: medium;
+    font-size: 1.2rem;
     border: none;
     margin: 20px 0px 0px 0px;
 }
