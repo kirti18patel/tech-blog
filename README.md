@@ -33,7 +33,7 @@ Developers can see all the posts available in home page. Once user is registered
 
 
 ## Links
-•	[Heroku Deployment]()
+•	[Heroku Deployment](https://salty-castle-76662.herokuapp.com/)
 
 
 ## Tools
