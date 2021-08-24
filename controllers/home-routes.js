@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Post, User} = require('../models');
+const { Post, User, Comment} = require('../models');
 
 router.get('/', (req, res) => {
   Post.findAll({
@@ -25,13 +25,20 @@ router.get('/', (req, res) => {
 router.get('/post/:id', (req, res) => {
   Post.findByPk(req.params.id, {
     attributes: ['id', 'title', 'description', "created_at"],
-    include: [ User ]
+    include: [
+      {
+        model: Comment,
+        include: [User]
+          // {attributes: ['id','username']} ],
+      }
+  ]
   })
     .then(dbPostData => {
-      
+      // console.log(dbPostData);
       if (dbPostData) {
 
         const post= dbPostData.get({ plain: true });
+        console.log(post);
       res.render('comment', {post, comment: "comments list"});}
     })
     .catch(err => {

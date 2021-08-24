@@ -5,7 +5,6 @@ function addpostShow(){
 
   async function create(event) {
     event.preventDefault();
-      console.log("inside craete");
       const title = document.querySelector("#addPost-title").value;
       const description = document.querySelector("#addPost-content").value;
       
