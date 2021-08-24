@@ -27,16 +27,20 @@ router.get('/post/:id', (req, res) => {
     attributes: ['id', 'title', 'description', "created_at"],
     include: [
       {
+        model: User,
+        attributes: ['id','username']
+      },
+      {
         model: Comment,
-        include: [User]
-          // {attributes: ['id','username']} ],
+        attributes: ['id','comment', 'user_id', 'post_id', 'createdAt']
       }
   ]
   })
     .then(dbPostData => {
       if (dbPostData) {
         const post= dbPostData.get({ plain: true });
-        res.render('comment', {post, comment: "comments list"});
+        console.log(post);
+        res.render('comment', {post});
       }
     })
     .catch(err => {
