@@ -13,6 +13,7 @@
 body{
     background-color:  var(--lightcolor);
     font-family: 'Mukta', sans-serif;
+    scroll-behavior: smooth;
 }
 
 nav{
